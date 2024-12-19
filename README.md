@@ -15,6 +15,19 @@ The **COVID-19 Analytics Dashboard** for Indonesia is an interactive visualizati
 - **Key Performance Indicators (KPIs)**: Displays metrics like total cases, active cases, recovered cases, and deaths.
 - **Interactive Charts**: Includes bar charts, pie charts, and heatmaps to visualize COVID-19 data.
 - **Location-wise Analysis**: Analyze COVID-19 data for different regions and visualize the infection rate using pie charts.
+- 
+## Demo Screenshot
+
+![Dashboard Preview](Yearly Covid Trends.png)  
+
+![Dashboard Preview](Top Covid Case Provinces.png)  
+## Technologies Used
+
+- **Python**: Core language for data manipulation and dashboard development.
+- **Streamlit**: Framework for building the interactive dashboard.
+- **Pandas**: For data manipulation and processing.
+- **Altair & Plotly**: For data visualization and charts.
+- **Seaborn & Matplotlib**: For additional plotting, especially heatmaps.
 
 ## Instructions for Running the Application Locally
 
@@ -31,11 +44,34 @@ You can install the required packages by running the following command:
 
 pip install streamlit pandas plotly altair seaborn
 
-Steps to Run:
-- **Clone the repository or download the project files.**
-- **Open a terminal or command prompt and navigate to the folder where the script is located.**
--**Run the following command to start the Streamlit app:**
-streamlit run your_script_name.py
+
+## Steps to Run the Streamlit Application
+
+1. **Clone the repository or download the project files:**
+
+   - To **clone** the repository using Git, run the following command in your terminal:
+     ```bash
+     git clone https://github.com/your-username/Indonesia-Covid19_Analytics_Dashboard.git
+     ```
+     *(Replace `your-username` with your actual GitHub username)*
+
+   - Alternatively, you can **download the ZIP file** from the GitHub repository and extract it to your local machine.
+
+2. **Navigate to the project directory:**
+
+   - Open a terminal or command prompt.
+   - Use the `cd` command to navigate to the folder where the `app.py` (or the script with your Streamlit app) is located. For example:
+     ```bash
+     cd path/to/Indonesia-Covid19_Analytics_Dashboard
+     ```
+
+   - Ensure the `app.py` or main script file is located in this directory.
+
+4. **Run the Streamlit app:**
+
+   Once dependencies are installed, run the following command to start the Streamlit app:
+   ```bash
+   streamlit run app.py
 
 
 
