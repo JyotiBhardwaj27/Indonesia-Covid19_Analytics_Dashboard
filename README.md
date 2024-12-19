@@ -29,7 +29,7 @@ The **COVID-19 Analytics Dashboard** for Indonesia is an interactive visualizati
 
 ## Instructions for Running the Application Locally
 
-### Prerequisites
+## Prerequisites
 Ensure that you have the following installed on your local machine:
 - **Python** (version 3.7 or higher)
 - **Streamlit**
