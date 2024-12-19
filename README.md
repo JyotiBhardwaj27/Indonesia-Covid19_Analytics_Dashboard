@@ -18,9 +18,9 @@ The **COVID-19 Analytics Dashboard** for Indonesia is an interactive visualizati
 - 
 ## Demo Screenshot
 
-![Dashboard Preview](Yearly Covid Trends.png)  
+![Alt Text](Yearly Covid Trends.png)  
 
-![Dashboard Preview](Top Covid Case Provinces.png)  
+![Alt Text](Top Covid Case Provinces.png)  
 ## Technologies Used
 
 - **Python**: Core language for data manipulation and dashboard development.
