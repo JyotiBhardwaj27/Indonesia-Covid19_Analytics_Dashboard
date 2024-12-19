@@ -1,5 +1,5 @@
 # Indonesia: COVID-19 Analytics Dashboard
-![Alt Text](/Users/dheerajkumar/Desktop/Covid.png)
+![Alt Text](Covid.png)
 
 ## Overview
 The **COVID-19 Analytics Dashboard** for Indonesia is an interactive visualization tool developed using **Streamlit**, **Plotly**, and **Altair**. This dashboard allows users to explore key metrics related to the spread of COVID-19 across various regions in Indonesia. With filtering options for location, year, month, and day, the dashboard provides insights into trends like total cases, active cases, recovered cases, and deaths. It also visualizes key data points through charts such as bar charts, pie charts, heatmaps, and more.
