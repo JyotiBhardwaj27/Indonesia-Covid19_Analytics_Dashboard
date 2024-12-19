@@ -28,12 +28,13 @@ Ensure that you have the following installed on your local machine:
 - **Seaborn**
 
 You can install the required packages by running the following command:
+
 pip install streamlit pandas plotly altair seaborn
 
 Steps to Run:
-- Clone the repository or download the project files.
-- Open a terminal or command prompt and navigate to the folder where the script is located.
--Run the following command to start the Streamlit app:
+- **Clone the repository or download the project files.**
+- **Open a terminal or command prompt and navigate to the folder where the script is located.**
+-**Run the following command to start the Streamlit app:**
 streamlit run your_script_name.py
 
 
