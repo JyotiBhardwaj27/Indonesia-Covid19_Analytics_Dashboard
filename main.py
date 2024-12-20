@@ -3,16 +3,15 @@ import plotly.express as px
 import streamlit as st
 import altair as alt
 import preprocessor
-
+# Loading dataset
 df=pd.read_csv('Covid19_Indonesia.csv')
-
-
 
 # Title for Dashboard
 st.sidebar.title('Filters')
 st.markdown("<h1 style='text-align: center;'>Indonesia: COVID-19 Analytics Dashboard</h1>", unsafe_allow_html=True)
-# Path to your image (make sure the path is correct)
-file_path = r'/Users/dheerajkumar/Desktop/Screenshot 2024-12-18 at 11.10.08.png'
+
+# Path to image
+file_path = r'/Users/dheerajkumar/Desktop/Covid.png'
 st.image(file_path)
 
 
@@ -163,6 +162,10 @@ with col4:
     ).properties(width=700, height=400)
     st.altair_chart(bar_chart)
 
+
+from preprocessor import plot_recovery_rate_per_province
+# Call the function to plot recovery rate
+plot_recovery_rate_per_province(filtered_df)
 
 
 

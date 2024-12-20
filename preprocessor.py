@@ -2,7 +2,11 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import altair as alt
 import plotly.express as px
+
+
+
 # Function to create filter multiselect options in Streamlit
 def multiselect(title, options_list):
     selected = st.sidebar.multiselect(title, options_list)
@@ -111,3 +115,43 @@ def plot_total_cases_population_density_heatmap(filtered_df):
 
     # Step 4: Render the heatmap in Streamlit
     st.pyplot(fig)
+
+# Recovery rate 
+
+def plot_recovery_rate_per_province(filtered_df):
+    """
+    This function calculates the recovery rate per province and displays it as a bar chart.
+
+    Args:
+    filtered_df (DataFrame): The input DataFrame containing 'Province', 'Total Cases', and 'Total Recovered' columns.
+
+    Returns:
+    None
+    """
+    st.subheader("Recovery Rate by Province")
+    # Group by Province and calculate total cases and recoveries
+    province_data = filtered_df.groupby('Province').agg(
+        Total_Cases=('Total Cases', 'sum'),
+        Total_Recovered=('Total Recovered', 'sum')
+    ).reset_index()
+
+    # Calculate Recovery Rate
+    province_data['Recovery Rate (%)'] = (province_data['Total_Recovered'] / province_data['Total_Cases']) * 100
+
+    # Handle cases where Total Cases might be 0 to avoid NaN or infinite values
+    province_data['Recovery Rate (%)'] = province_data['Recovery Rate (%)'].fillna(0)
+# Create a bar chart using Altair
+     # Sort data by recovery rate for better visualization
+    data_sorted = province_data.sort_values(by='Recovery Rate (%)', ascending=False)
+
+    # Matplotlib Bar Chart
+    fig, ax = plt.subplots(figsize=(12, 8))
+    ax.bar(data_sorted['Province'], data_sorted['Recovery Rate (%)'], color='skyblue')
+    ax.set_xlabel("Province", fontsize=12)
+    ax.set_ylabel("Recovery Rate (%)", fontsize=12)
+    ax.tick_params(axis='x', rotation=90)
+    st.pyplot(fig)
+ 
+
+
+    
