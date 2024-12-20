@@ -13,8 +13,8 @@ st.sidebar.title('Filters')
 st.markdown("<h1 style='text-align: center;'>Indonesia: COVID-19 Analytics Dashboard</h1>", unsafe_allow_html=True)
 
 # Path to image
-# file_path = r'/Users/dheerajkumar/Desktop/Covid.png'
-# st.image(file_path)
+file_path = r'https://images.app.goo.gl/tHR2JuTTGMaSkpbQA'
+st.image(file_path)
 
 # Function to create filter multiselect options in Streamlit
 def multiselect(title, options_list):
