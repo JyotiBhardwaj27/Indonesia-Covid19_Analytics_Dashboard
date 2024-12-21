@@ -26,6 +26,7 @@ The **COVID-19 Analytics Dashboard** for Indonesia is an interactive visualizati
 - **Pandas**: For data manipulation and processing.
 - **Altair & Plotly**: For data visualization and charts.
 - **Seaborn & Matplotlib**: For additional plotting, especially heatmaps.
+
 ## 📈 Key Performance Indicators (KPIs)
 
 The dashboard provides the following KPIs based on user-selected filters (location, year, month, day):
@@ -42,6 +43,7 @@ The dashboard provides the following KPIs based on user-selected filters (locati
 | **Population Density Correlation** | Heatmap showing the relationship between population density and total COVID-19 cases. |
 | **Location-wise Stats**    | Bar charts for total cases, active cases, deaths, and recovered cases by location. |
 | **Recovery Rate by Province** | Recovery rate (%) for each province.                      |
+
 ## Prerequisites
 Ensure that you have the following installed on your local machine:
 - **Python** (version 3.7 or higher)
@@ -56,8 +58,14 @@ You can install the required packages by running the following command:
 pip install streamlit pandas plotly altair seaborn
 
 
-## Steps to Run the Streamlit Application
+## Two methodds to Run the Streamlit Application
 
+## Method 1:
+## 🚀 Dashboard Deployment
+
+You can directly access the Streamlit dashboard by referring to the **[StreamlitCloudDeploymentInformation](StreamlitCloudDeploymentInformation)** file in the repository.
+
+## Method 2:
 1. **Clone the repository or download the project files:**
 
    - To **clone** the repository using Git, run the following command in your terminal:
@@ -83,10 +91,7 @@ pip install streamlit pandas plotly altair seaborn
    Once dependencies are installed, run the following command to start the Streamlit app:
    ```bash
    streamlit run app.py
-# OR
-## 🚀 Dashboard Deployment
 
-You can directly access the Streamlit dashboard by referring to the **[StreamlitCloudDeploymentInformation](StreamlitCloudDeploymentInformation)** file in the repository.
 
 
 
