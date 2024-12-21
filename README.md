@@ -26,7 +26,22 @@ The **COVID-19 Analytics Dashboard** for Indonesia is an interactive visualizati
 - **Pandas**: For data manipulation and processing.
 - **Altair & Plotly**: For data visualization and charts.
 - **Seaborn & Matplotlib**: For additional plotting, especially heatmaps.
+## 📈 Key Performance Indicators (KPIs)
 
+The dashboard provides the following KPIs based on user-selected filters (location, year, month, day):
+
+| **KPI**                   | **Description**                                               | **Example Output**       |
+|---------------------------|---------------------------------------------------------------|--------------------------|
+| **Total COVID Cases**      | Total confirmed COVID-19 cases in the filtered dataset.       | `125,000` cases          |
+| **Total Active Cases**     | Total currently active COVID-19 cases.                       | `10,500` cases           |
+| **Total Recovered**        | Total recovered COVID-19 cases.                              | `110,000` cases          |
+| **Total Deaths**           | Total deaths due to COVID-19.                                | `4,500` cases            |
+| **Yearly COVID Trends**    | Bar chart showing the yearly trends in total COVID-19 cases. | Example: Increasing trend in `2021`, decrease in `2022`. |
+| **Top Provinces by Cases** | Provinces with the highest number of COVID-19 cases.         | Example: `Jakarta`, `West Java`. |
+| **Infection Percentage**   | Percentage of population infected vs. non-infected per region. | Example: `30% infected, 70% non-infected`. |
+| **Population Density Correlation** | Heatmap showing the relationship between population density and total COVID-19 cases. | Correlation: High density = High cases |
+| **Location-wise Stats**    | Bar charts for total cases, active cases, deaths, and recovered cases by location. | Example: `Surabaya` has the most deaths. |
+| **Recovery Rate by Province** | Recovery rate (%) for each province. 
 ## Instructions for Running the Application Locally
 
 ## Prerequisites
