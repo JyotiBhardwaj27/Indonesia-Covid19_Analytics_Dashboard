@@ -70,6 +70,10 @@ pip install streamlit pandas plotly altair seaborn
    Once dependencies are installed, run the following command to start the Streamlit app:
    ```bash
    streamlit run app.py
+# OR
+## 🚀 Dashboard Deployment
+
+You can directly access the Streamlit dashboard by referring to the **[StreamlitCloudDeploymentInformation](StreamlitCloudDeploymentInformation)** file in the repository.
 
 
 
